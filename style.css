@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.properties {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.txt {
+  padding-left: 5px;
+  border-radius: 5px;
+  width: 250px;
+  box-shadow: 12px 18px 22px -1px rgba(16, 26, 33, 0.19);
+  -webkit-box-shadow: 12px 18px 22px -1px rgba(16, 26, 33, 0.19);
+  -moz-box-shadow: 12px 18px 22px -1px rgba(16, 26, 33, 0.19);
+}
+
+#issMap {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: 600px;
+  width: auto;
+}
