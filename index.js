@@ -19,15 +19,14 @@ const api_url = "https://api.wheretheiss.at/v1/satellites/25544";
 async function getISS() {
   const response = await fetch(api_url);
   const data = await response.json();
-  const { latitude, longitude, visibility, } = data;
-  
+  const { latitude, longitude, visibility } = data;
 
   marker.setLatLng([latitude, longitude]);
   mymap.setView([latitude, longitude], 3);
 
   document.querySelector("#lat").textContent = latitude;
   document.querySelector("#lon").textContent = longitude;
-  document.querySelector('#vis').textContent = visibility;
+  document.querySelector("#vis").textContent = visibility;
   //   console.log(latitude);
   //   console.log(longitude);
 }
@@ -35,3 +34,17 @@ async function getISS() {
 getISS();
 
 setInterval(getISS, 1000);
+
+
+const imageContainer = document.querySelector(".images");
+const imgShow = document.querySelector("#showImg");
+
+imgShow.addEventListener("click", function () {
+  imageContainer.style.display = "flex";
+});
+
+imageContainer.addEventListener('click', function() {
+  imageContainer.style.display = 'none'
+});
+
+

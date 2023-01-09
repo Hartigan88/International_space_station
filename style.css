@@ -29,3 +29,25 @@
   height: 600px;
   width: auto;
 }
+
+.images {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(167, 156, 156, 0.8);
+  z-index: 9999;
+  overflow-y: scroll;
+  flex-direction: column;
+  
+}
+
+.images img {
+  display: block;
+  margin: 0 auto;
+  padding: 7px;
+  max-width: 90%;
+  max-height: 90%;
+}
