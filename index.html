@@ -18,20 +18,40 @@
 </head>
 
 <body class="">
-    <h1 class="header">International space station</h1>
-
-    <div class="properties bg-info text-white">
-
-        <p class="txt">Latitude: <span id="lat"></span></p>
-        <p class="txt"> Longitude: <span id="lon"></span></p>
-        <p class="txt">Visibility: <span id="vis"></span></p>
-
+    <h1 class="header bg-info text-white">International space station</h1>
+    <div class="properties text-white">
+        <p class="txt bg-info">Latitude: <span id="lat"></span></p>
+        <p class="txt bg-info"> Longitude: <span id="lon"></span></p>
+        <p class="txt bg-info">Visibility: <span id="vis"></span></p>
+    </div>
+    
+    <div class="container p-3 d-flex justify-content-between">
+        <div class="issemblem">
+            <img src="./images/ISS_emblem.png" alt="">
+        </div>
+        <div class="mt-3 mb-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/21X5lGlDOfg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+       
+     
+    </div>
+    <div class="container d-flex justify-content-center fs-3 border border-info border-5 mb-3">
+        <p>The International Space Station is a large spacecraft in orbit around Earth. It serves as a home where crews
+            of astronauts and cosmonauts live. The space station is also a unique science laboratory. Several nations
+            worked together to build and use the space station. The space station is made of parts that were assembled
+            in space by astronauts. It orbits Earth at an average altitude of approximately 250 miles. It travels at
+            17,500 mph. This means it orbits Earth every 90 minutes. NASA is using the space station to learn more about
+            living and working in space. These lessons will make it possible to send humans farther into space than ever
+            before.</p>
     </div>
 
-    <div id="issMap" class="border border-primary shadow-lg p-3 mb-5 bg-body rounded m-5"></div>
-    <button id="showImg" class="btn btn-primary">Gallerie</button>
+    <button id="showImg" class="btnfont btn btn-info container d-flex justify-content-center fs-2 mb-3">Gallerie</button>
+
     <div class="images">
-        <img src="./images/1.jpg" class="" alt="">
+        <img src="./images/1.jpg" alt="">
         <img src="./images/2.jpg" alt="">
         <img src="./images/3.jpg" alt="">
         <img src="./images/4.jpg" alt="">
@@ -45,12 +65,9 @@
         <img src="./images/12.jpg" alt="">
         <img src="./images/13.jpg" alt="">
     </div>
-    <div class="">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/21X5lGlDOfg" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-    </div>
+   
+    <div id="issMap" class="container border border-primary shadow-lg p-3 mb-5 bg-body rounded"></div>
+
 
     <script src="index.js"></script>
 </body>

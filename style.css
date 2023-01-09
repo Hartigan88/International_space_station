@@ -3,6 +3,7 @@
 }
 
 .header {
+  height: 70px;
   display: flex;
   justify-content: center;
 }
@@ -14,9 +15,13 @@
 }
 
 .txt {
+  text-align: center;
+  font-size: larger;
+  font-weight: 700;
   padding-left: 5px;
   border-radius: 5px;
-  width: 250px;
+  height: 50px;
+  width: 300px;
   box-shadow: 12px 18px 22px -1px rgba(16, 26, 33, 0.19);
   -webkit-box-shadow: 12px 18px 22px -1px rgba(16, 26, 33, 0.19);
   -moz-box-shadow: 12px 18px 22px -1px rgba(16, 26, 33, 0.19);
@@ -50,4 +55,30 @@
   padding: 7px;
   max-width: 90%;
   max-height: 90%;
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btnfont {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+.issemblem {
+  animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform:  rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.issemblem img {
+  width: 400px;
+  height: auto;
 }
